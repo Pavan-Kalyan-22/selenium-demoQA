@@ -11,7 +11,6 @@ public class DriverManager {
     private static WebDriver driver;
 
     private DriverManager() {
-        // Prevent instantiation
     }
 
     public static WebDriver getDriver() {

@@ -5,6 +5,8 @@
     <classes>
       <class name="tests.EdgeTest">
         <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
           <include name="edge"/>
         </methods>
       </class> <!-- tests.EdgeTest -->
