@@ -12,7 +12,7 @@ import pages.Elements;
 public class EdgeTest extends BaseTest{
 
     @Test
-    public void edge() {
+    public void edge()  {
     	Elements elements = new Elements(driver);
 
     	elements.tapElement();
