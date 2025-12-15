@@ -3,24 +3,33 @@ package utils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
 
-import java.time.Duration;
-
 public class commonUtils {
 
-    WebDriver driver;
+    private WebDriver driver;
+    private WaitUtils wait;
 
     public commonUtils(WebDriver driver) {
         this.driver = driver;
+        this.wait = new WaitUtils(driver);
     }
 
-    public void scrollToElement(WebElement element) {
-        ((JavascriptExecutor) driver).executeScript(
-                "arguments[0].scrollIntoView({block: 'center'});", element);
+    // Scroll to element
+    public void scrollToElement(By locator) {
+        WebElement element = wait.waitForVisibility(locator);
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].scrollIntoView({block:'center'});", element);
     }
 
-    public void click(WebElement element) {
-        new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.elementToBeClickable(element));
+    // Click safely
+    public void click(By locator) {
+        WebElement element = wait.waitForClickability(locator);
         element.click();
+    }
+
+    // Send keys safely
+    public void sendKeys(By locator, String text) {
+        WebElement element = wait.waitForVisibility(locator);
+        element.clear();
+        element.sendKeys(text);
     }
 }
