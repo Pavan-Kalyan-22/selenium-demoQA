@@ -10,13 +10,13 @@ public class EdgeTest {
 
     @Test
     public void edge() {
-    	System.setProperty("webdriver.edge.driver", "C:\\drivers\\edgedriver_win64\\msedgedriver.exe");
+    	System.setProperty("webdriver.edge.driver", "C:\\drivers\\msedgedriver.exe");
 
     	EdgeOptions options = new EdgeOptions();
     	options.addArguments("--inprivate");
         WebDriver driver = new EdgeDriver();
         driver.get("https://demoqa.com/");
         System.out.println(driver.getTitle());
-        driver.quit();
+        // driver.quit();
     }
 }
