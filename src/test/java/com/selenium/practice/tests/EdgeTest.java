@@ -1,4 +1,4 @@
-package tests;
+package com.selenium.practice.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -15,7 +15,7 @@ public class EdgeTest {
     	EdgeOptions options = new EdgeOptions();
     	options.addArguments("--inprivate");
         WebDriver driver = new EdgeDriver();
-        driver.get("https://demoqa.com/");
+        driver.get("https://www.saucedemo.com/");
         System.out.println(driver.getTitle());
         // driver.quit();
     }

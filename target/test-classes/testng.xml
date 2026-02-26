@@ -3,7 +3,7 @@
 <suite name="SeleniumFrameworkSuite" verbose="1" parallel="false">
   <test name="LoginTests">
     <packages>
-      <package name="tests"/>
+      <package name="com.selenium.practice.tests"/>
     </packages>
   </test>
 </suite>

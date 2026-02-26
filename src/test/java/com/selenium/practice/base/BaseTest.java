@@ -1,10 +1,10 @@
-package base;
+package com.selenium.practice.base;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import driver.DriverManager;
-import utils.ConfigReader;
+import com.selenium.practice.driver.DriverManager;
+import com.selenium.practice.utils.ConfigReader;
 
 public class BaseTest {
 
