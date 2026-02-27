@@ -26,8 +26,9 @@ public class DriverManager {
                             break;
                         case "edge":
                         default:
-                            WebDriverManager.edgedriver().setup();
-                            driver = new EdgeDriver();
+                            System.setProperty("webdriver.edge.driver",
+            ConfigReader.getProperty("edge.path"));
+            driver = new EdgeDriver();
                             break;
                     }
                     driver.manage().window().maximize();
