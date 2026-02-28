@@ -39,8 +39,6 @@ public class LoginTest extends BaseTest {
         loginPage.enterUsername(user);
         loginPage.enterPassword(pass);
         loginPage.clickLogin();
-        
-        
 
         if (shouldSucceed) {
             // wait for inventory page or other indicator
@@ -51,5 +49,7 @@ public class LoginTest extends BaseTest {
                     "Error message did not contain expected text. Actual='" + msg + "'");
         }
     }
+
+
 }
 
