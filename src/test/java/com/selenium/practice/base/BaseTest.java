@@ -14,6 +14,7 @@ public class BaseTest {
     public void setUp() {
         driver = DriverManager.getDriver();
         String url = ConfigReader.getProperty("url");
+        
         driver.get(url);
     }
 
