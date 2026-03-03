@@ -6,6 +6,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import com.selenium.practice.models.Product;
 
@@ -20,6 +21,7 @@ public class HomePage {
     private final By productContainer = By.className("inventory_item");
     private By productName = By.cssSelector("[data-test='inventory-item-name']");
     private By productPrice = By.cssSelector("[data-test='inventory-item-price']");
+    private By sortContainer = By.cssSelector("[data-test='product-sort-container']");
 
 public List<Product>getAllProducts(){
 
@@ -36,6 +38,13 @@ public List<Product>getAllProducts(){
 
     }
     return productList;
+}
+
+
+public String getSelectedSortOption(){
+    Select select = new Select(driver.findElement(sortContainer));
+    return  select.getFirstSelectedOption().getText();
+
 }
 
 
