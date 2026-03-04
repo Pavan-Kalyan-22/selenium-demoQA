@@ -6,8 +6,11 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
 
+import com.selenium.practice.enums.SortType;
 import com.selenium.practice.models.Product;
 
 public class HomePage {
@@ -41,11 +44,12 @@ public List<Product>getAllProducts(){
 }
 
 
-public String getSelectedSortOption(){
-    Select select = new Select(driver.findElement(sortContainer));
-    return  select.getFirstSelectedOption().getText();
+public void selectSortOption(SortType sortType) {
 
-}
+    Select select = new Select(driver.findElement(sortContainer));
+    select.selectByVisibleText(sortType.getVisibleText());
+
+    }
 
 
 

@@ -1,50 +1,55 @@
 package com.selenium.practice.tests;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.selenium.practice.base.AuthenticatedBaseTest;
+import com.selenium.practice.enums.SortCategory;
+import com.selenium.practice.enums.SortType;
 import com.selenium.practice.models.Product;
 import com.selenium.practice.pages.HomePage;
+import com.selenium.practice.utils.ProductSortUtils;
 
 public class ProductListTest extends AuthenticatedBaseTest {
 
-
-     @Test
-    public void verifyDefaultSortIsNameAtoZ() {
-
-        logger.info("Starting test: verifyDefaultSortIsNameAtoZ");
+    @Test
+    public void verifyAllSortingOptionsInSingleFlow() {
 
         HomePage homePage = new HomePage(driver);
 
-        logger.info("Fetching selected sort option");
-        String selectedOption = homePage.getSelectedSortOption();
+        //  1. Verify Default Sorting (A → Z)
+        List<Product> defaultProducts = homePage.getAllProducts();
 
-        logger.info("Selected sort option is: {}", selectedOption);
+        Assert.assertTrue(
+                ProductSortUtils.isSortedByName(defaultProducts, true),
+                "Default sorting is not Name A → Z"
+        );
 
-        Assert.assertEquals(selectedOption, "Name (A to Z)",
-                "Default sort option is incorrect!");
+        //  2. Verify remaining 3 sorts
+        verifySorting(homePage, SortType.NAME_DESC);
+        verifySorting(homePage, SortType.PRICE_ASC);
+        verifySorting(homePage, SortType.PRICE_DESC);
+    }
 
-        logger.info("Fetching all products");
+    private void verifySorting(HomePage homePage, SortType sortType) {
+
+        homePage.selectSortOption(sortType);
+
         List<Product> products = homePage.getAllProducts();
 
-        List<String> actualNames = products.stream()
-                .map(Product::getName)
-                .toList();
+        boolean isSorted;
 
-        logger.info("Actual product names: {}", actualNames);
+        if (sortType.getCategory() == SortCategory.NAME) {
+            isSorted = ProductSortUtils.isSortedByName(products, sortType.isAscending());
+        } else {
+            isSorted = ProductSortUtils.isSortedByPrice(products, sortType.isAscending());
+        }
 
-        List<String> expectedNames = new ArrayList<>(actualNames);
-        Collections.sort(expectedNames);
-
-        logger.info("Expected sorted names: {}", expectedNames);
-
-        Assert.assertEquals(actualNames, expectedNames,
-                "Products are NOT sorted A-Z by default!");
-
-        logger.info("Test completed successfully");
-    }}
+        Assert.assertTrue(
+                isSorted,
+                "Sorting validation failed for: " + sortType
+        );
+    }
+}
