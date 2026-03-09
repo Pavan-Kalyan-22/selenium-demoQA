@@ -20,6 +20,9 @@ public class BaseTest {
 
     protected WebDriver driver;
 
+        protected Logger logger = LogManager.getLogger(this.getClass());
+
+
     @BeforeClass
     public void setUp() {
         // Setup Edge browser

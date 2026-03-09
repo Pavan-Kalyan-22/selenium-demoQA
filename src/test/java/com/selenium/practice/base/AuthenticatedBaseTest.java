@@ -8,6 +8,7 @@ import com.selenium.practice.utils.WaitUtils;
 
 public class AuthenticatedBaseTest extends BaseTest {
 
+
     @BeforeMethod
     @Override
     public void setUp() {
