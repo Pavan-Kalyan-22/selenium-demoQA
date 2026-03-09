@@ -1,17 +1,16 @@
-package driver;
+package com.selenium.practice.driver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import utils.ConfigReader;
+import com.selenium.practice.utils.ConfigReader;
 
 public class DriverManager {
 
     private static WebDriver driver;
 
     private DriverManager() {
-        // Prevent instantiation
     }
 
     public static WebDriver getDriver() {
@@ -26,8 +25,9 @@ public class DriverManager {
                             break;
                         case "edge":
                         default:
-                            WebDriverManager.edgedriver().setup();
-                            driver = new EdgeDriver();
+                            System.setProperty("webdriver.edge.driver",
+            ConfigReader.getProperty("edge.path"));
+            driver = new EdgeDriver();
                             break;
                     }
                     driver.manage().window().maximize();
