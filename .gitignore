@@ -1,0 +1,25 @@
+# Maven
+/target/
+/**/*.class
+# Eclipse
+.project
+.classpath
+.settings/
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+# OS
+.DS_Store
+Thumbs.db
+# Logs
+*.log
+# WebDriver binaries
+/drivers/
+# Test output
+/test-output/
+# Temporary files
+*~
+# environment properties
+*.env

@@ -2,7 +2,7 @@ package tests;
 
 import org.testng.annotations.Test;
 
-import base.BaseTest;
+import com.selenium.practice.base.*;
 import pages.menu;
 
 public class ElementsTest extends BaseTest{

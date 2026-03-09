@@ -1,5 +1,7 @@
-package base;
+package com.selenium.practice.base;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -9,7 +11,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import utils.ConfigReader;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import com.selenium.practice.driver.DriverManager;
+import com.selenium.practice.utils.ConfigReader;
 
 public class BaseTest {
 
@@ -27,6 +32,7 @@ public class BaseTest {
 driver = new ChromeDriver(options);
         // Get URL from config
         String url = ConfigReader.getProperty("url");
+        
         driver.get(url);
     }
 
