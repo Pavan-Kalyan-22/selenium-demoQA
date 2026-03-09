@@ -1,0 +1,56 @@
+2026-02-25T14:54:44.252Z [INFO] ----------------------invoke generate_upgrade_plan----------------------
+2026-02-25T14:54:44.253Z [INFO] [Tool.invoke]({name: generate_upgrade_plan, input: {
+  "projectPath": "c:\\Users\\pavan\\selenium-demoQA",
+  "targetJavaVersion": "21"
+}}).
+2026-02-25T14:54:44.254Z [INFO] [Plan.tryStartTask]({tool:generate_upgrade_plan, nextTask:{type:undefined, tool:undefined}}
+2026-02-25T14:54:44.254Z [INFO] [Plan.tryStartTask]: no next task, create new one.
+2026-02-25T14:54:44.255Z [INFO] [Plan.createTaskAtStart]({tool: generate_upgrade_plan, input: {
+  "projectPath": "c:\\Users\\pavan\\selenium-demoQA",
+  "targetJavaVersion": "21",
+  "sessionId": "20260225145444"
+}}).
+2026-02-25T14:54:44.255Z [INFO] [Plan.tryStartTask]: starting task generatePlan
+2026-02-25T14:54:44.256Z [INFO] [Task.start](): Starting task generatePlan
+2026-02-25T14:54:44.257Z [INFO] [Task.start](1): Started task generatePlan
+2026-02-25T14:54:44.264Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2026-02-25T14:54:44.265Z [INFO] [Tool.invoke] do pre-invoke.
+2026-02-25T14:54:44.265Z [INFO] [Tool.invoke] do invoke.
+2026-02-25T14:54:44.390Z [INFO] [Task.start](): Starting task generatePlan
+2026-02-25T14:54:44.391Z [INFO] [Task.start](1.1): Started task generatePlan
+2026-02-25T14:54:44.392Z [INFO] ---------------------prepare install_jdk----------------------
+2026-02-25T14:54:44.392Z [INFO] [Tool.prepareInvocation]({name: install_jdk, input: {
+  "sessionId": "20260225145444",
+  "version": "8",
+  "dest": "C:\\Users\\pavan\\.jdk",
+  "reason": "JDK 8 is required to build the project, but not found on the machine."
+}}).
+2026-02-25T14:54:44.392Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-02-25T14:54:45.284Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Download and install JDK",
+  "confirmationMessages": {
+    "title": "Download and install JDK",
+    "message": "\nJDK 8 is required to build the project, but not found on the machine.\nThis tool will download and install JDK 8 from Adoptium with below settings.\n- **Version**: 8\n- **Vendor**: Adoptium\n- **Url**: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u482-b08/OpenJDK8U-jdk_x64_windows_hotspot_8u482b08.zip\n- **Destination**: `C:\\Users\\pavan\\.jdk`\n- **Checksum**: SHA256: 51637ae41af1bce379a9d059109820864949c8d57ca302e0d502fcf329d33a72\n- **Signature**: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u482-b08/OpenJDK8U-jdk_x64_windows_hotspot_8u482b08.zip.sig\n- **Public Key**: https://packages.adoptium.net/artifactory/api/gpg/key/public\n"
+  }
+}}).
+2026-02-25T14:54:45.285Z [INFO] ----------------------prepared install_jdk----------------------
+2026-02-25T14:54:50.678Z [INFO] [Task.complete](1.1): Completing task generatePlan
+2026-02-25T14:54:50.683Z [INFO] [Task.complete](1.1): Completed task generatePlan
+2026-02-25T14:54:50.688Z [ERROR] [Tool.invoke] error occurs when invoking tool generate_upgrade_plan: UserError: Failed to prepare project configuration or init upgrade options: JDK is not provided or detected for Java 8.
+Please provide a valid JDK installation that is compatible with 8. You may find another valid JDK installation or guide user to install one first.. Please check the project configuration and try again..
+2026-02-25T14:54:50.693Z [INFO] [Task.complete](1): Completing task generatePlan
+2026-02-25T14:54:50.696Z [INFO] ----------------------invoked generate_upgrade_plan----------------------
+2026-02-25T14:54:50.696Z [INFO] [Task.complete](1): Completed task generatePlan
+2026-02-25T14:55:04.774Z [INFO] ---------------------prepare install_jdk----------------------
+2026-02-25T14:55:04.774Z [INFO] [Tool.prepareInvocation]({name: install_jdk, input: {
+  "version": "8"
+}}).
+2026-02-25T14:55:04.774Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-02-25T14:55:04.906Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Download and install JDK",
+  "confirmationMessages": {
+    "title": "Download and install JDK",
+    "message": "\nThis tool will download and install JDK 8 from Adoptium with below settings.\n- **Version**: 8\n- **Vendor**: Adoptium\n- **Url**: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u482-b08/OpenJDK8U-jdk_x64_windows_hotspot_8u482b08.zip\n- **Destination**: `C:\\Users\\pavan\\.jdk`\n- **Checksum**: SHA256: 51637ae41af1bce379a9d059109820864949c8d57ca302e0d502fcf329d33a72\n- **Signature**: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u482-b08/OpenJDK8U-jdk_x64_windows_hotspot_8u482b08.zip.sig\n- **Public Key**: https://packages.adoptium.net/artifactory/api/gpg/key/public\n"
+  }
+}}).
+2026-02-25T14:55:04.907Z [INFO] ----------------------prepared install_jdk----------------------

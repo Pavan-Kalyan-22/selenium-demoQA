@@ -1,0 +1,9 @@
+2026-02-25T14:54:44.266Z [INFO] Initializing project configuration...
+2026-02-25T14:54:44.267Z [INFO] Project c:\Users\pavan\selenium-demoQA is a maven project, try to get java version from pom.xml
+2026-02-25T14:54:44.353Z [ERROR] Failed to get effective POM: Error: ENOENT: no such file or directory, open 'C:\Users\pavan\AppData\Local\Temp\maven-effective-pom-KZB6TX\effective-pom-72223bd7-2528-4ae5-9506-c5600093d02f.xml'
+2026-02-25T14:54:44.354Z [INFO] Project java version: 8
+2026-02-25T14:54:44.355Z [INFO] Maven project detected.
+2026-02-25T14:54:44.355Z [INFO] Build tool type: mvn
+2026-02-25T14:54:44.378Z [ERROR] JDK is not provided or detected for Java 8.
+2026-02-25T14:54:50.686Z [ERROR] Failed to prepare project configuration or init upgrade options: JDK is not provided or detected for Java 8.
+Please provide a valid JDK installation that is compatible with 8. You may find another valid JDK installation or guide user to install one first..

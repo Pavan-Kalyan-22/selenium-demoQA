@@ -1,0 +1,51 @@
+2026-02-25T14:57:21.094Z [INFO] ----------------------invoke build_java_project----------------------
+2026-02-25T14:57:21.095Z [INFO] [Tool.invoke]({name: build_java_project, input: {
+  "projectPath": "c:\\Users\\pavan\\selenium-demoQA",
+  "codeChangesMessage": "",
+  "codeChangesDetails": ""
+}}).
+2026-02-25T14:57:21.095Z [INFO] [Task.start](): Starting task toolCall
+2026-02-25T14:57:21.096Z [INFO] [Task.start](): Started task toolCall
+2026-02-25T14:57:21.096Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2026-02-25T14:57:21.096Z [INFO] [Tool.invoke] do pre-invoke.
+2026-02-25T14:57:21.097Z [INFO] Project c:\Users\pavan\selenium-demoQA is a maven project, try to get java version from pom.xml
+2026-02-25T14:57:21.171Z [ERROR] Failed to get effective POM: Error: ENOENT: no such file or directory, open 'C:\Users\pavan\AppData\Local\Temp\maven-effective-pom-X8MV6z\effective-pom-54b0dbdf-842d-471d-bea5-4956c3014f28.xml'
+2026-02-25T14:57:21.173Z [INFO] Project java version: 8
+2026-02-25T14:57:21.175Z [INFO] Maven project detected.
+2026-02-25T14:57:21.177Z [INFO] Build tool type: mvn
+2026-02-25T14:57:21.192Z [ERROR] JDK is not provided or detected for Java 8.
+2026-02-25T14:57:21.200Z [INFO] [Task.start](): Starting task toolCall
+2026-02-25T14:57:21.201Z [INFO] [Task.start](1): Started task toolCall
+2026-02-25T14:57:21.202Z [INFO] ---------------------prepare install_jdk----------------------
+2026-02-25T14:57:21.202Z [INFO] [Tool.prepareInvocation]({name: install_jdk, input: {
+  "sessionId": "20260225145721",
+  "version": "8",
+  "dest": "C:\\Users\\pavan\\.jdk",
+  "reason": "JDK 8 is required to build the project, but not found on the machine."
+}}).
+2026-02-25T14:57:21.202Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-02-25T14:57:21.639Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Download and install JDK",
+  "confirmationMessages": {
+    "title": "Download and install JDK",
+    "message": "\nJDK 8 is required to build the project, but not found on the machine.\nThis tool will download and install JDK 8 from Adoptium with below settings.\n- **Version**: 8\n- **Vendor**: Adoptium\n- **Url**: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u482-b08/OpenJDK8U-jdk_x64_windows_hotspot_8u482b08.zip\n- **Destination**: `C:\\Users\\pavan\\.jdk`\n- **Checksum**: SHA256: 51637ae41af1bce379a9d059109820864949c8d57ca302e0d502fcf329d33a72\n- **Signature**: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u482-b08/OpenJDK8U-jdk_x64_windows_hotspot_8u482b08.zip.sig\n- **Public Key**: https://packages.adoptium.net/artifactory/api/gpg/key/public\n"
+  }
+}}).
+2026-02-25T14:57:21.642Z [INFO] ----------------------prepared install_jdk----------------------
+2026-02-25T14:57:30.284Z [INFO] [Task.complete](1): Completing task toolCall
+2026-02-25T14:57:30.285Z [INFO] [Task.complete](1): Completed task toolCall
+2026-02-25T14:57:30.286Z [ERROR] [Tool.invoke] error occurs when invoking tool build_java_project: Canceled: Canceled.
+2026-02-25T14:57:30.286Z [INFO] [Task.complete](): Completing task toolCall
+2026-02-25T14:57:30.287Z [INFO] ----------------------invoked build_java_project----------------------
+2026-02-25T14:57:30.288Z [INFO] [Task.complete](): Completed task toolCall
+2026-02-25T14:57:47.919Z [INFO] ---------------------prepare build_java_project----------------------
+2026-02-25T14:57:47.919Z [INFO] [Tool.prepareInvocation]({name: build_java_project, input: {
+  "projectPath": "c:\\Users\\pavan\\selenium-demoQA",
+  "codeChangesMessage": "",
+  "codeChangesDetails": ""
+}}).
+2026-02-25T14:57:47.920Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-02-25T14:57:47.921Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Build project"
+}}).
+2026-02-25T14:57:47.941Z [INFO] ----------------------prepared build_java_project----------------------

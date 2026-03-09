@@ -1,0 +1,19 @@
+2026-03-03 20:54:20 [main] INFO  com.selenium.practice.tests.ProductListTest - Starting test: verifyDefaultSortIsNameAtoZ
+2026-03-03 20:54:20 [main] INFO  com.selenium.practice.tests.ProductListTest - Fetching selected sort option
+2026-03-03 20:54:20 [main] INFO  com.selenium.practice.tests.ProductListTest - Selected sort option is: Name (A to Z)
+2026-03-03 20:54:20 [main] INFO  com.selenium.practice.tests.ProductListTest - Fetching all products
+2026-03-03 20:54:21 [main] INFO  com.selenium.practice.tests.ProductListTest - Actual product names: [Sauce Labs Backpack, Sauce Labs Bike Light, Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket, Sauce Labs Onesie, Test.allTheThings() T-Shirt (Red)]
+2026-03-03 20:54:21 [main] INFO  com.selenium.practice.tests.ProductListTest - Expected sorted names: [Sauce Labs Backpack, Sauce Labs Bike Light, Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket, Sauce Labs Onesie, Test.allTheThings() T-Shirt (Red)]
+2026-03-03 20:54:21 [main] INFO  com.selenium.practice.tests.ProductListTest - Test completed successfully
+2026-03-03 20:55:59 [main] INFO  com.selenium.practice.tests.ProductListTest - Starting test: verifyDefaultSortIsNameAtoZ
+2026-03-03 20:55:59 [main] INFO  com.selenium.practice.tests.ProductListTest - Fetching selected sort option
+2026-03-03 20:56:00 [main] INFO  com.selenium.practice.tests.ProductListTest - Selected sort option is: Name (A to Z)
+2026-03-03 20:56:00 [main] INFO  com.selenium.practice.tests.ProductListTest - Fetching all products
+2026-03-03 20:56:00 [main] INFO  com.selenium.practice.tests.ProductListTest - Actual product names: [Sauce Labs Backpack, Sauce Labs Bike Light, Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket, Sauce Labs Onesie, Test.allTheThings() T-Shirt (Red)]
+2026-03-03 20:56:00 [main] INFO  com.selenium.practice.tests.ProductListTest - Expected sorted names: [Sauce Labs Backpack, Sauce Labs Bike Light, Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket, Sauce Labs Onesie, Test.allTheThings() T-Shirt (Red)]
+2026-03-03 20:56:00 [main] INFO  com.selenium.practice.tests.ProductListTest - Test completed successfully
+2026-03-05 20:54:39 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Backpack | Price: 29.99
+2026-03-09 18:43:13 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Bike Light | Price: 9.99
+2026-03-09 18:49:21 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Backpack | Price: 29.99
+2026-03-09 18:50:03 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - 1
+2026-03-09 18:50:03 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Bolt T-Shirt | Price: 15.99
