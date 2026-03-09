@@ -77,4 +77,15 @@ public class HomePage {
         return new Product(name, price);
     }
 
+    public int getCartBadgeCount(){
+
+        if(driver.findElements(shoppingCartBadge).isEmpty()){
+            return 0;
+        }
+
+        String badgeCount = driver.findElement(shoppingCartBadge).getText();
+        return Integer.parseInt(badgeCount);
+
+    }
+
 }

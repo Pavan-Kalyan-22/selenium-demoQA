@@ -19,10 +19,11 @@ public class AddSingleProductTest extends AuthenticatedBaseTest {
         Product selectedProduct = homePage.addRandomProductToCart();
 
         // Assert
-        // int cartCount = homePage.getCartBadgeCount();
+        int cartCount = homePage.getCartBadgeCount();
+logger.info(cartCount);
 
-        // Assert.assertEquals(cartCount, 1,
-        //         "Cart count did not increase after adding product");
+        Assert.assertEquals(cartCount, 1,
+                "Cart count did not increase after adding product");
 
         logger.info("Selected Product: "
                 + selectedProduct.getName()
