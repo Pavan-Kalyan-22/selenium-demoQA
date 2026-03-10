@@ -17,3 +17,15 @@
 2026-03-09 18:49:21 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Backpack | Price: 29.99
 2026-03-09 18:50:03 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - 1
 2026-03-09 18:50:03 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Bolt T-Shirt | Price: 15.99
+2026-03-09 19:30:10 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - 1
+2026-03-09 19:30:10 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Backpack | Price: 29.99
+2026-03-09 20:03:50 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - [Product{name='Sauce Labs Bolt T-Shirt', price=15.99}, Product{name='Sauce Labs Fleece Jacket', price=49.99}, Product{name='Test.allTheThings() T-Shirt (Red)', price=15.99}]
+2026-03-09 20:03:50 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - 3
+2026-03-09 20:04:58 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Selected Products[Product{name='Sauce Labs Bolt T-Shirt', price=15.99}, Product{name='Sauce Labs Bike Light', price=9.99}, Product{name='Sauce Labs Backpack', price=29.99}]
+2026-03-09 20:04:58 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Cart Badge Count 3
+2026-03-09 20:20:59 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Selected Products[Product{name='Test.allTheThings() T-Shirt (Red)', price=15.99}, Product{name='Sauce Labs Bolt T-Shirt', price=15.99}, Product{name='Sauce Labs Backpack', price=29.99}]
+2026-03-09 20:20:59 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Cart Badge Count 3
+2026-03-09 20:21:23 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Selected Products[Product{name='Sauce Labs Bolt T-Shirt', price=15.99}, Product{name='Test.allTheThings() T-Shirt (Red)', price=15.99}, Product{name='Sauce Labs Bike Light', price=9.99}, Product{name='Sauce Labs Onesie', price=7.99}, Product{name='Sauce Labs Backpack', price=29.99}]
+2026-03-09 20:21:23 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Cart Badge Count 5
+2026-03-09 20:22:10 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Selected Products[Product{name='Sauce Labs Backpack', price=29.99}, Product{name='Sauce Labs Bolt T-Shirt', price=15.99}, Product{name='Sauce Labs Onesie', price=7.99}, Product{name='Test.allTheThings() T-Shirt (Red)', price=15.99}]
+2026-03-09 20:22:10 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Cart Badge Count 4

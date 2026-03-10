@@ -1,6 +1,7 @@
 package com.selenium.practice.pages;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import javax.management.RuntimeErrorException;
@@ -76,6 +77,34 @@ public class HomePage {
 
         return new Product(name, price);
     }
+    public List<Product> addRandomProductsToCart(int number) {
+
+    List<WebElement> products = driver.findElements(productContainer);
+
+    if (products.isEmpty()) {
+        throw new RuntimeException("No products found on the page");
+    }
+
+    Collections.shuffle(products);
+
+    List<Product> selectedProducts = new ArrayList<>();
+
+    for (int i = 0; i < number; i++) {
+
+        WebElement product = products.get(i);
+
+        String name = product.findElement(productName).getText();
+
+        String priceText = product.findElement(productPrice).getText();
+        double price = Double.parseDouble(priceText.replace("$", ""));
+
+        product.findElement(cartBtn).click();
+
+        selectedProducts.add(new Product(name, price));
+    }
+
+    return selectedProducts;
+}
 
     public int getCartBadgeCount(){
 
