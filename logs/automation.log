@@ -29,3 +29,196 @@
 2026-03-09 20:21:23 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Cart Badge Count 5
 2026-03-09 20:22:10 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Selected Products[Product{name='Sauce Labs Backpack', price=29.99}, Product{name='Sauce Labs Bolt T-Shirt', price=15.99}, Product{name='Sauce Labs Onesie', price=7.99}, Product{name='Test.allTheThings() T-Shirt (Red)', price=15.99}]
 2026-03-09 20:22:10 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Cart Badge Count 4
+2026-03-10 19:41:43 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Selected Products[Product{name='Sauce Labs Bolt T-Shirt', price=15.99}, Product{name='Sauce Labs Onesie', price=7.99}, Product{name='Sauce Labs Fleece Jacket', price=49.99}, Product{name='Test.allTheThings() T-Shirt (Red)', price=15.99}]
+2026-03-10 19:41:43 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Cart Badge Count 4
+2026-03-10 19:45:08 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Selected Products[Product{name='Sauce Labs Fleece Jacket', price=49.99}, Product{name='Sauce Labs Bolt T-Shirt', price=15.99}, Product{name='Sauce Labs Backpack', price=29.99}, Product{name='Test.allTheThings() T-Shirt (Red)', price=15.99}]
+2026-03-10 19:45:08 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Cart Badge Count 4
+2026-03-10 19:58:23 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 19:58:23 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE STARTED
+2026-03-10 19:58:23 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: TestNGTest-f6f6539e-4f63-4be2-80cd-0031cb2709df
+2026-03-10 19:58:23 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-03-10 19:58:28 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-03-10 19:58:28 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST STARTED: verifyMultipleProductTest
+2026-03-10 19:58:28 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Test Class: com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest
+2026-03-10 19:58:28 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-03-10 19:58:29 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Selected Products[Product{name='Test.allTheThings() T-Shirt (Red)', price=15.99}, Product{name='Sauce Labs Bike Light', price=9.99}, Product{name='Sauce Labs Bolt T-Shirt', price=15.99}, Product{name='Sauce Labs Fleece Jacket', price=49.99}]
+2026-03-10 19:58:29 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Cart Badge Count 4
+2026-03-10 19:58:29 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ✓ TEST PASSED: verifyMultipleProductTest
+2026-03-10 19:58:29 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Execution Time: 1404 ms
+2026-03-10 19:58:29 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-03-10 19:58:29 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 19:58:29 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE FINISHED
+2026-03-10 19:58:29 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: TestNGTest-f6f6539e-4f63-4be2-80cd-0031cb2709df
+2026-03-10 19:58:29 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Total Tests: 1
+2026-03-10 19:58:29 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Passed: 1
+2026-03-10 19:58:29 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Failed: 0
+2026-03-10 19:58:29 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Skipped: 0
+2026-03-10 19:58:29 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE STARTED
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: ProductSelect
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE FINISHED
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: ProductSelect
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Total Tests: 0
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Passed: 0
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Failed: 0
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Skipped: 0
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE STARTED
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: SingleProductSelect
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE FINISHED
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: SingleProductSelect
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Total Tests: 0
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Passed: 0
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Failed: 0
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Skipped: 0
+2026-03-10 20:19:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE STARTED
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: ProductSelect
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE FINISHED
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: ProductSelect
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Total Tests: 0
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Passed: 0
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Failed: 0
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Skipped: 0
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE STARTED
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: SingleProductSelect
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE FINISHED
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: SingleProductSelect
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Total Tests: 0
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Passed: 0
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Failed: 0
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Skipped: 0
+2026-03-10 20:20:30 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE STARTED
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: ProductSelect
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE FINISHED
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: ProductSelect
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Total Tests: 0
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Passed: 0
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Failed: 0
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Skipped: 0
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE STARTED
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: SingleProductSelect
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE FINISHED
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: SingleProductSelect
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Total Tests: 0
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Passed: 0
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Failed: 0
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Skipped: 0
+2026-03-10 20:23:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-03-10 20:24:58 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 20:24:58 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE STARTED
+2026-03-10 20:24:58 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: ProductSelect
+2026-03-10 20:24:58 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-03-10 20:25:04 [TestNG-test-ProductSelect-2] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-03-10 20:25:04 [TestNG-test-ProductSelect-2] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST STARTED: verifyMultipleProductTest
+2026-03-10 20:25:04 [TestNG-test-ProductSelect-2] INFO  com.selenium.practice.listeners.TestExecutionListener - Test Class: com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest
+2026-03-10 20:25:04 [TestNG-test-ProductSelect-2] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-03-10 20:25:04 [TestNG-test-ProductSelect-1] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-03-10 20:25:04 [TestNG-test-ProductSelect-1] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST STARTED: verifyRandomProductAddedToCart
+2026-03-10 20:25:04 [TestNG-test-ProductSelect-1] INFO  com.selenium.practice.listeners.TestExecutionListener - Test Class: com.selenium.practice.tests.checkoutflow.AddSingleProductTest
+2026-03-10 20:25:04 [TestNG-test-ProductSelect-1] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-03-10 20:25:05 [TestNG-test-ProductSelect-1] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - 1
+2026-03-10 20:25:05 [TestNG-test-ProductSelect-1] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Onesie | Price: 7.99
+2026-03-10 20:25:05 [TestNG-test-ProductSelect-1] INFO  com.selenium.practice.listeners.TestExecutionListener - ✓ TEST PASSED: verifyRandomProductAddedToCart
+2026-03-10 20:25:05 [TestNG-test-ProductSelect-1] INFO  com.selenium.practice.listeners.TestExecutionListener - Execution Time: 625 ms
+2026-03-10 20:25:05 [TestNG-test-ProductSelect-1] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-03-10 20:25:05 [TestNG-test-ProductSelect-2] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Selected Products[Product{name='Sauce Labs Bike Light', price=9.99}, Product{name='Sauce Labs Onesie', price=7.99}, Product{name='Sauce Labs Fleece Jacket', price=49.99}, Product{name='Test.allTheThings() T-Shirt (Red)', price=15.99}]
+2026-03-10 20:25:06 [TestNG-test-ProductSelect-2] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Cart Badge Count 4
+2026-03-10 20:25:06 [TestNG-test-ProductSelect-2] INFO  com.selenium.practice.listeners.TestExecutionListener - ✓ TEST PASSED: verifyMultipleProductTest
+2026-03-10 20:25:06 [TestNG-test-ProductSelect-2] INFO  com.selenium.practice.listeners.TestExecutionListener - Execution Time: 1403 ms
+2026-03-10 20:25:06 [TestNG-test-ProductSelect-2] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-03-10 20:25:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 20:25:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE FINISHED
+2026-03-10 20:25:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: ProductSelect
+2026-03-10 20:25:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Total Tests: 2
+2026-03-10 20:25:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Passed: 2
+2026-03-10 20:25:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Failed: 0
+2026-03-10 20:25:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Skipped: 0
+2026-03-10 20:25:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-03-10 20:25:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 20:25:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE STARTED
+2026-03-10 20:25:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: SingleProductSelect
+2026-03-10 20:25:06 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-03-10 20:25:10 [TestNG-test-SingleProductSelect-1] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-03-10 20:25:10 [TestNG-test-SingleProductSelect-1] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST STARTED: verifyRandomProductAddedToCart
+2026-03-10 20:25:10 [TestNG-test-SingleProductSelect-1] INFO  com.selenium.practice.listeners.TestExecutionListener - Test Class: com.selenium.practice.tests.checkoutflow.AddSingleProductTest
+2026-03-10 20:25:10 [TestNG-test-SingleProductSelect-1] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-03-10 20:25:11 [TestNG-test-SingleProductSelect-1] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - 1
+2026-03-10 20:25:11 [TestNG-test-SingleProductSelect-1] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Bolt T-Shirt | Price: 15.99
+2026-03-10 20:25:11 [TestNG-test-SingleProductSelect-1] INFO  com.selenium.practice.listeners.TestExecutionListener - ✓ TEST PASSED: verifyRandomProductAddedToCart
+2026-03-10 20:25:11 [TestNG-test-SingleProductSelect-1] INFO  com.selenium.practice.listeners.TestExecutionListener - Execution Time: 518 ms
+2026-03-10 20:25:11 [TestNG-test-SingleProductSelect-1] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-03-10 20:25:13 [TestNG-test-SingleProductSelect-2] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-03-10 20:25:13 [TestNG-test-SingleProductSelect-2] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST STARTED: verifyMultipleProductTest
+2026-03-10 20:25:13 [TestNG-test-SingleProductSelect-2] INFO  com.selenium.practice.listeners.TestExecutionListener - Test Class: com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest
+2026-03-10 20:25:13 [TestNG-test-SingleProductSelect-2] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-03-10 20:25:14 [TestNG-test-SingleProductSelect-2] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Selected Products[Product{name='Test.allTheThings() T-Shirt (Red)', price=15.99}, Product{name='Sauce Labs Bolt T-Shirt', price=15.99}, Product{name='Sauce Labs Backpack', price=29.99}, Product{name='Sauce Labs Onesie', price=7.99}]
+2026-03-10 20:25:14 [TestNG-test-SingleProductSelect-2] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Cart Badge Count 4
+2026-03-10 20:25:14 [TestNG-test-SingleProductSelect-2] INFO  com.selenium.practice.listeners.TestExecutionListener - ✓ TEST PASSED: verifyMultipleProductTest
+2026-03-10 20:25:14 [TestNG-test-SingleProductSelect-2] INFO  com.selenium.practice.listeners.TestExecutionListener - Execution Time: 1295 ms
+2026-03-10 20:25:14 [TestNG-test-SingleProductSelect-2] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-03-10 20:25:14 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-03-10 20:25:14 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE FINISHED
+2026-03-10 20:25:14 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: SingleProductSelect
+2026-03-10 20:25:14 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Total Tests: 2
+2026-03-10 20:25:14 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Passed: 2
+2026-03-10 20:25:14 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Failed: 0
+2026-03-10 20:25:14 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Skipped: 0
+2026-03-10 20:25:14 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
