@@ -222,3 +222,16 @@
 2026-03-10 20:25:14 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Skipped: 0
 2026-03-10 20:25:14 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
 
+2026-03-11 20:03:28 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - 1
+2026-03-11 20:03:28 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Bike Light | Price: 9.99
+2026-03-11 20:04:03 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - 1
+2026-03-11 20:04:03 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Backpack | Price: 29.99
+2026-03-11 20:07:14 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - 1
+2026-03-11 20:07:14 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Bolt T-Shirt | Price: 15.99
+2026-03-11 20:07:36 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - 1
+2026-03-11 20:07:36 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Backpack | Price: 29.99
+2026-03-11 20:07:52 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - 1
+2026-03-11 20:07:52 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Bike Light | Price: 9.99
+2026-03-11 20:08:53 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - 1
+2026-03-11 20:08:53 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Onesie | Price: 7.99
+2026-03-11 20:08:53 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Cart List : Product{name='Sauce Labs Onesie', price=7.99}

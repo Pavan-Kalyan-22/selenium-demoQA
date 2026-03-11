@@ -25,9 +25,13 @@ public class HomePage {
     }
 
     private final By productContainer = By.className("inventory_item");
+    private final By cartList = By.className("cart_list");
     private By productName = By.cssSelector("[data-test='inventory-item-name']");
     private By productPrice = By.cssSelector("[data-test='inventory-item-price']");
     private By sortContainer = By.cssSelector("[data-test='product-sort-container']");
+    private By checkoutAssetItemName = By.cssSelector("[data-test='inventory-item-name']");
+    private By checkOutproductPrice = By.cssSelector("[data-test='inventory-item-price']");
+
     private By cartBtn = By.cssSelector(".btn_inventory");
     private By shoppingCartLink = By.cssSelector(".shopping_cart_link");
     private By shoppingCartBadge = By.cssSelector(".shopping_cart_badge");
@@ -47,6 +51,34 @@ public class HomePage {
 
         }
         return productList;
+    }
+    
+    /**
+     * Clicks the shopping cart icon/link to navigate to the cart/checkout page.
+     */
+    public void navigateCheckoutPage(){
+       driver.findElement(shoppingCartLink).click();
+    }
+
+    /**
+     * Retrieves a list of products currently displayed on the checkout/cart page.
+     * This uses dedicated locators in case the cart page structure differs from the
+     * home page, though in this application they happen to be identical.
+     *
+     * @return list of {@link Product} objects representing items in the cart
+     */
+    public List<Product> getAllCheckoutProducts() {
+        List<WebElement> products = driver.findElements(cartList);
+        List<Product> checkoutProductList = new ArrayList<>();
+
+        for (WebElement product : products) {
+            String name = product.findElement(checkoutAssetItemName).getText();
+            String priceText = product.findElement(checkOutproductPrice).getText();
+            double price = Double.parseDouble(priceText.replace("$", ""));
+            checkoutProductList.add(new Product(name, price));
+        }
+
+        return checkoutProductList;
     }
 
     public void selectSortOption(SortType sortType) {
@@ -77,38 +109,39 @@ public class HomePage {
 
         return new Product(name, price);
     }
+
     public List<Product> addRandomProductsToCart(int number) {
 
-    List<WebElement> products = driver.findElements(productContainer);
+        List<WebElement> products = driver.findElements(productContainer);
 
-    if (products.isEmpty()) {
-        throw new RuntimeException("No products found on the page");
+        if (products.isEmpty()) {
+            throw new RuntimeException("No products found on the page");
+        }
+
+        Collections.shuffle(products);
+
+        List<Product> selectedProducts = new ArrayList<>();
+
+        for (int i = 0; i < number; i++) {
+
+            WebElement product = products.get(i);
+
+            String name = product.findElement(productName).getText();
+
+            String priceText = product.findElement(productPrice).getText();
+            double price = Double.parseDouble(priceText.replace("$", ""));
+
+            product.findElement(cartBtn).click();
+
+            selectedProducts.add(new Product(name, price));
+        }
+
+        return selectedProducts;
     }
 
-    Collections.shuffle(products);
+    public int getCartBadgeCount() {
 
-    List<Product> selectedProducts = new ArrayList<>();
-
-    for (int i = 0; i < number; i++) {
-
-        WebElement product = products.get(i);
-
-        String name = product.findElement(productName).getText();
-
-        String priceText = product.findElement(productPrice).getText();
-        double price = Double.parseDouble(priceText.replace("$", ""));
-
-        product.findElement(cartBtn).click();
-
-        selectedProducts.add(new Product(name, price));
-    }
-
-    return selectedProducts;
-}
-
-    public int getCartBadgeCount(){
-
-        if(driver.findElements(shoppingCartBadge).isEmpty()){
+        if (driver.findElements(shoppingCartBadge).isEmpty()) {
             return 0;
         }
 
