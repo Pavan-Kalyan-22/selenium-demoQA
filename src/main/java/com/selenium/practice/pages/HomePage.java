@@ -4,38 +4,47 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import javax.management.RuntimeErrorException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.Wait;
-
 import com.selenium.practice.enums.SortType;
 import com.selenium.practice.models.Product;
 
+// Page object representing the home page of the application.
 public class HomePage {
 
+    // WebDriver instance used to interact with the page.
     private final WebDriver driver;
 
+    // Creates a HomePage object tied to the provided WebDriver instance.
     public HomePage(WebDriver driver) {
         this.driver = driver;
     }
 
+    // Locator for each product card on the home page.
     private final By productContainer = By.className("inventory_item");
+    // Locator for the list of products shown in the cart/checkout page.
     private final By cartList = By.className("cart_list");
+    // Locator for the product name within a product card.
     private By productName = By.cssSelector("[data-test='inventory-item-name']");
+    // Locator for the product price within a product card.
     private By productPrice = By.cssSelector("[data-test='inventory-item-price']");
+    // Locator for the sorting dropdown on the home page.
     private By sortContainer = By.cssSelector("[data-test='product-sort-container']");
+    // Locator for the product name in the checkout/cart page.
     private By checkoutAssetItemName = By.cssSelector("[data-test='inventory-item-name']");
+    // Locator for the product price in the checkout/cart page.
     private By checkOutproductPrice = By.cssSelector("[data-test='inventory-item-price']");
 
+    // Locator for the Add to Cart button on a product card.
     private By cartBtn = By.cssSelector(".btn_inventory");
+    // Locator for the shopping cart link in the header.
     private By shoppingCartLink = By.cssSelector(".shopping_cart_link");
+    // Locator for the badge showing the number of items in the cart.
     private By shoppingCartBadge = By.cssSelector(".shopping_cart_badge");
 
+    // Collects all visible products from the home page and converts them into Product objects.
     public List<Product> getAllProducts() {
 
         List<WebElement> products = driver.findElements(productContainer);
@@ -81,6 +90,7 @@ public class HomePage {
         return checkoutProductList;
     }
 
+    // Selects the requested sorting option from the dropdown on the home page.
     public void selectSortOption(SortType sortType) {
 
         Select select = new Select(driver.findElement(sortContainer));
@@ -88,6 +98,7 @@ public class HomePage {
 
     }
 
+    // Adds one randomly selected product to the cart and returns its details.
     public Product addRandomProductToCart() {
 
         List<WebElement> products = driver.findElements(productContainer);
@@ -110,6 +121,7 @@ public class HomePage {
         return new Product(name, price);
     }
 
+    // Adds the requested number of products to the cart after shuffling the available items.
     public List<Product> addRandomProductsToCart(int number) {
 
         List<WebElement> products = driver.findElements(productContainer);
@@ -139,6 +151,7 @@ public class HomePage {
         return selectedProducts;
     }
 
+    // Returns the number shown on the shopping cart badge, or 0 if the cart is empty.
     public int getCartBadgeCount() {
 
         if (driver.findElements(shoppingCartBadge).isEmpty()) {

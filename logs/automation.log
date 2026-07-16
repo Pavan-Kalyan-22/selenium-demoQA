@@ -235,3 +235,6 @@
 2026-03-11 20:08:53 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - 1
 2026-03-11 20:08:53 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Onesie | Price: 7.99
 2026-03-11 20:08:53 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Cart List : Product{name='Sauce Labs Onesie', price=7.99}
+2026-04-06 20:12:12 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - 1
+2026-04-06 20:12:12 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Fleece Jacket | Price: 49.99
+2026-04-06 20:12:12 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Cart List : Product{name='Sauce Labs Fleece Jacket', price=49.99}

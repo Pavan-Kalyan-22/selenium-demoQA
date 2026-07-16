@@ -11,29 +11,37 @@ import org.testng.annotations.BeforeClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import com.selenium.practice.utils.ConfigReader;
 
+// Base class for shared test setup and cleanup.
 public class BaseTest {
 
+    // WebDriver instance used by the test methods in this class.
     protected WebDriver driver;
 
-        protected Logger logger = LogManager.getLogger(this.getClass());
+    // Logger for recording test setup and execution details.
+    protected Logger logger = LogManager.getLogger(this.getClass());
 
-
+    // Sets up the browser and opens the application URL before the test class runs.
     @BeforeClass
     public void setUp() {
-        // Setup Edge browser
-       WebDriverManager.chromedriver().setup();
-       
-       ChromeOptions options = new ChromeOptions();
-       options.addArguments("--start-maximized");
-       options.addArguments("--incognito");
+        // Set up the ChromeDriver automatically.
+        WebDriverManager.chromedriver().setup();
 
-driver = new ChromeDriver(options);
-        // Get URL from config
+        // Configure Chrome to start in a maximized and incognito window.
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--start-maximized");
+        options.addArguments("--incognito");
+
+        // Create the ChromeDriver with the configured options.
+        driver = new ChromeDriver(options);
+
+        // Read the application URL from configuration properties.
         String url = ConfigReader.getProperty("url");
-        
+
+        // Open the target URL in the browser.
         driver.get(url);
     }
 
+    // Closes the browser session after the test class finishes.
     @AfterClass(alwaysRun = true)
     public void tearDown() {
         if (driver != null) {
