@@ -238,3 +238,56 @@
 2026-04-06 20:12:12 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - 1
 2026-04-06 20:12:12 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Fleece Jacket | Price: 49.99
 2026-04-06 20:12:12 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Cart List : Product{name='Sauce Labs Fleece Jacket', price=49.99}
+2026-07-16 07:05:08 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-07-16 07:05:08 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE STARTED
+2026-07-16 07:05:08 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: TestNGTest-99406f1a-1043-4ee0-944c-26dfbef09d45
+2026-07-16 07:05:08 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-07-16 07:05:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-07-16 07:05:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST STARTED: verifyMultipleProductTest
+2026-07-16 07:05:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Test Class: com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest
+2026-07-16 07:05:22 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-07-16 07:05:23 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Selected Products[Product{name='Sauce Labs Bike Light', price=9.99}, Product{name='Sauce Labs Bolt T-Shirt', price=15.99}, Product{name='Test.allTheThings() T-Shirt (Red)', price=15.99}, Product{name='Sauce Labs Fleece Jacket', price=49.99}]
+2026-07-16 07:05:23 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Cart Badge Count 4
+2026-07-16 07:05:23 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ✓ TEST PASSED: verifyMultipleProductTest
+2026-07-16 07:05:23 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Execution Time: 1126 ms
+2026-07-16 07:05:24 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-07-16 07:05:24 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-07-16 07:05:24 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE FINISHED
+2026-07-16 07:05:24 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: TestNGTest-99406f1a-1043-4ee0-944c-26dfbef09d45
+2026-07-16 07:05:24 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Total Tests: 1
+2026-07-16 07:05:24 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Passed: 1
+2026-07-16 07:05:24 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Failed: 0
+2026-07-16 07:05:24 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Skipped: 0
+2026-07-16 07:05:24 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-07-21 20:02:47 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - 1
+2026-07-21 20:02:47 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Selected Product: Sauce Labs Bike Light | Price: 9.99
+2026-07-21 20:02:47 [main] INFO  com.selenium.practice.tests.checkoutflow.AddSingleProductTest - Cart List : Product{name='Sauce Labs Bike Light', price=9.99}
+2026-07-21 20:02:55 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-07-21 20:02:55 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE STARTED
+2026-07-21 20:02:55 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: TestNGTest-35b77b6e-0f81-40db-a795-20ef200ac116
+2026-07-21 20:02:55 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-07-21 20:02:58 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-07-21 20:02:58 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST STARTED: verifyMultipleProductTest
+2026-07-21 20:02:58 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Test Class: com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest
+2026-07-21 20:02:58 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-07-21 20:02:59 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Selected Products[Product{name='Test.allTheThings() T-Shirt (Red)', price=15.99}, Product{name='Sauce Labs Bolt T-Shirt', price=15.99}, Product{name='Sauce Labs Backpack', price=29.99}, Product{name='Sauce Labs Onesie', price=7.99}]
+2026-07-21 20:02:59 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Cart Badge Count 4
+2026-07-21 20:02:59 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ✓ TEST PASSED: verifyMultipleProductTest
+2026-07-21 20:02:59 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Execution Time: 619 ms
+2026-07-21 20:02:59 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-07-21 20:02:59 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-07-21 20:02:59 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE FINISHED
+2026-07-21 20:02:59 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: TestNGTest-35b77b6e-0f81-40db-a795-20ef200ac116
+2026-07-21 20:02:59 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Total Tests: 1
+2026-07-21 20:02:59 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Passed: 1
+2026-07-21 20:02:59 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Failed: 0
+2026-07-21 20:02:59 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Skipped: 0
+2026-07-21 20:02:59 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
