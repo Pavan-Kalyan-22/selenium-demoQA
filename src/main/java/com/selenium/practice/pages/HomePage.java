@@ -10,16 +10,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import com.selenium.practice.enums.SortType;
 import com.selenium.practice.models.Product;
+import com.selenium.practice.utils.commonUtils;
 
 // Page object representing the home page of the application.
 public class HomePage {
 
     // WebDriver instance used to interact with the page.
     private final WebDriver driver;
+    private final commonUtils utils;
 
     // Creates a HomePage object tied to the provided WebDriver instance.
     public HomePage(WebDriver driver) {
         this.driver = driver;
+        this.utils = new commonUtils(driver);
     }
 
     // Locator for each product card on the home page.
@@ -39,6 +42,9 @@ public class HomePage {
 
     // Locator for the Add to Cart button on a product card.
     private By cartBtn = By.cssSelector(".btn_inventory");
+
+    // Locator for the Remove button on a product card.
+    private By removeBtn = By.cssSelector(".btn.btn_secondary.btn_small.cart_button");
     // Locator for the shopping cart link in the header.
     private By shoppingCartLink = By.cssSelector(".shopping_cart_link");
     // Locator for the badge showing the number of items in the cart.
@@ -95,6 +101,11 @@ public class HomePage {
 
         Select select = new Select(driver.findElement(sortContainer));
         select.selectByVisibleText(sortType.getVisibleText());
+
+    }
+
+    public void removeProduct(){
+        utils.click(driver.findElement(removeBtn));
 
     }
 

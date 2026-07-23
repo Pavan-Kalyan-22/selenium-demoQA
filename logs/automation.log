@@ -291,3 +291,135 @@
 2026-07-21 20:02:59 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Skipped: 0
 2026-07-21 20:02:59 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
 
+2026-07-22 06:23:07 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-07-22 06:23:07 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE STARTED
+2026-07-22 06:23:07 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: TestNGTest-b012f399-df6e-497b-9d31-c9c04c1ee69f
+2026-07-22 06:23:07 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-07-22 06:23:15 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-07-22 06:23:15 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST STARTED: verifyMultipleProductTest
+2026-07-22 06:23:15 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Test Class: com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest
+2026-07-22 06:23:15 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-07-22 06:23:16 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Selected Products[Product{name='Sauce Labs Backpack', price=29.99}, Product{name='Sauce Labs Fleece Jacket', price=49.99}, Product{name='Sauce Labs Onesie', price=7.99}, Product{name='Test.allTheThings() T-Shirt (Red)', price=15.99}]
+2026-07-22 06:23:16 [main] INFO  com.selenium.practice.tests.checkoutflow.MultipleProductSelectionTest - Cart Badge Count 4
+2026-07-22 06:23:16 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ✓ TEST PASSED: verifyMultipleProductTest
+2026-07-22 06:23:16 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Execution Time: 1421 ms
+2026-07-22 06:23:16 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-07-22 06:23:17 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-07-22 06:23:17 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE FINISHED
+2026-07-22 06:23:17 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: TestNGTest-b012f399-df6e-497b-9d31-c9c04c1ee69f
+2026-07-22 06:23:17 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Total Tests: 1
+2026-07-22 06:23:17 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Passed: 1
+2026-07-22 06:23:17 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Failed: 0
+2026-07-22 06:23:17 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Skipped: 0
+2026-07-22 06:23:17 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-07-22 06:25:43 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-07-22 06:25:43 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE STARTED
+2026-07-22 06:25:43 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: TestNGTest-04e4020b-f3a2-46dd-99f9-16052d83d8de
+2026-07-22 06:25:43 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-07-22 06:25:48 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-07-22 06:25:48 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST STARTED: removeProductFromCart
+2026-07-22 06:25:48 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Test Class: com.selenium.practice.tests.checkoutflow.RemoveProductFromCartTest
+2026-07-22 06:25:48 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-07-22 06:25:49 [main] ERROR com.selenium.practice.listeners.TestExecutionListener - ✗ TEST FAILED: removeProductFromCart
+2026-07-22 06:25:49 [main] ERROR com.selenium.practice.listeners.TestExecutionListener - Failure Reason: no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='inventory-item-name']"}
+  (Session info: chrome=150.0.7871.126)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [306185138ea5f0ed95e1a4a4300b0ceb, findChildElement {id=f.4B003756A99F72800D3B21A3EC7302F7.d.8F2B5D7ECED8F6310F4F7E1CDC8E0B82.e.54, value=[data-test='inventory-item-name'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.126, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\pavan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60671}, goog:processID: 10408, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60671/devtoo..., se:cdpVersion: 150.0.7871.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 306185138ea5f0ed95e1a4a4300b0ceb
+2026-07-22 06:25:49 [main] ERROR com.selenium.practice.listeners.TestExecutionListener - Execution Time: 1221 ms
+2026-07-22 06:25:49 [main] ERROR com.selenium.practice.listeners.TestExecutionListener - Stack Trace: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='inventory-item-name']"}
+  (Session info: chrome=150.0.7871.126)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [306185138ea5f0ed95e1a4a4300b0ceb, findChildElement {id=f.4B003756A99F72800D3B21A3EC7302F7.d.8F2B5D7ECED8F6310F4F7E1CDC8E0B82.e.54, value=[data-test='inventory-item-name'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.126, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\pavan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60671}, goog:processID: 10408, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60671/devtoo..., se:cdpVersion: 150.0.7871.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 306185138ea5f0ed95e1a4a4300b0ceb
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211) ~[selenium-remote-driver-4.25.0.jar:?]
+	at com.selenium.practice.pages.HomePage.getAllCheckoutProducts(HomePage.java:90) ~[classes/:?]
+	at com.selenium.practice.tests.checkoutflow.RemoveProductFromCartTest.removeProductFromCart(RemoveProductFromCartTest.java:30) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.microsoft.java.test.runner.testng.TestNGRunner.run(TestNGRunner.java:45) [com.microsoft.java.test.runner-jar-with-dependencies.jar:?]
+	at com.microsoft.java.test.runner.testng.TestNGLauncher.execute(TestNGLauncher.java:32) [com.microsoft.java.test.runner-jar-with-dependencies.jar:?]
+	at com.microsoft.java.test.runner.Launcher.main(Launcher.java:57) [com.microsoft.java.test.runner-jar-with-dependencies.jar:?]
+2026-07-22 06:25:49 [main] ERROR com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-07-22 06:25:50 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-07-22 06:25:50 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE FINISHED
+2026-07-22 06:25:50 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: TestNGTest-04e4020b-f3a2-46dd-99f9-16052d83d8de
+2026-07-22 06:25:50 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Total Tests: 1
+2026-07-22 06:25:50 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Passed: 0
+2026-07-22 06:25:50 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Failed: 1
+2026-07-22 06:25:50 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Skipped: 0
+2026-07-22 06:25:50 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-07-22 06:28:47 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-07-22 06:28:47 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE STARTED
+2026-07-22 06:28:47 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: TestNGTest-a8a50b9a-b954-4f24-97c2-a2ec78a535d8
+2026-07-22 06:28:47 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
+2026-07-22 06:28:53 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-07-22 06:28:53 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST STARTED: removeProductFromCart
+2026-07-22 06:28:53 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Test Class: com.selenium.practice.tests.checkoutflow.RemoveProductFromCartTest
+2026-07-22 06:28:53 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-07-22 06:28:54 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ✓ TEST PASSED: removeProductFromCart
+2026-07-22 06:28:54 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Execution Time: 1139 ms
+2026-07-22 06:28:54 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+2026-07-22 06:28:55 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - 
+========================================
+2026-07-22 06:28:55 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - TEST SUITE FINISHED
+2026-07-22 06:28:55 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Suite Name: TestNGTest-a8a50b9a-b954-4f24-97c2-a2ec78a535d8
+2026-07-22 06:28:55 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Total Tests: 1
+2026-07-22 06:28:55 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Passed: 1
+2026-07-22 06:28:55 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Failed: 0
+2026-07-22 06:28:55 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Skipped: 0
+2026-07-22 06:28:55 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
+
