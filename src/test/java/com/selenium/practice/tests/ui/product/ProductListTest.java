@@ -1,4 +1,4 @@
-package com.selenium.practice.tests;
+package com.selenium.practice.tests.ui.product;
 
 import java.util.List;
 

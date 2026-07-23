@@ -1,36 +1,50 @@
 package com.selenium.practice.utils;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
+/**
+ * Utility class for handling Explicit Waits in Selenium.
+ */
+public final class WaitUtils {
 
-// Utility class for waiting on common Selenium conditions.
-public class WaitUtils {
-
-    // Prevents accidental instantiation of this utility class.
+    // Prevent instantiation
     private WaitUtils() {
-        // utility class
     }
 
-    // Waits until the element located by the given locator is visible.
+    /**
+     * Creates and returns a WebDriverWait instance.
+     */
+    private static WebDriverWait getWait(WebDriver driver, int seconds) {
+        return new WebDriverWait(driver, Duration.ofSeconds(seconds));
+    }
+
+    /**
+     * Wait until the element is visible.
+     */
     public static WebElement waitForVisibility(WebDriver driver, By locator, int seconds) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        return getWait(driver, seconds)
+                .until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    // Waits until the element located by the given locator is clickable.
+    /**
+     * Wait until the element is clickable.
+     */
     public static WebElement waitForClickable(WebDriver driver, By locator, int seconds) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
-        return wait.until(ExpectedConditions.elementToBeClickable(locator));
+        return getWait(driver, seconds)
+                .until(ExpectedConditions.elementToBeClickable(locator));
     }
 
-    // Waits until the current page URL contains the provided text.
+    /**
+     * Wait until the page URL contains the given text.
+     */
     public static boolean waitForUrlContains(WebDriver driver, String text, int seconds) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
-        return wait.until(ExpectedConditions.urlContains(text));
+        return getWait(driver, seconds)
+                .until(ExpectedConditions.urlContains(text));
     }
 }

@@ -1,4 +1,4 @@
-package com.selenium.practice.tests;
+package com.selenium.practice.tests.ui.login;
 
 import com.selenium.practice.base.BaseTest;
 import com.selenium.practice.pages.LoginPage;
