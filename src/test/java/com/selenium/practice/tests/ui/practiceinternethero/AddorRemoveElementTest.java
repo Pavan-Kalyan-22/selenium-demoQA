@@ -1,15 +1,8 @@
 package com.selenium.practice.tests.ui.practiceinternethero;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import com.selenium.practice.base.AuthenticatedBaseTest;
 import com.selenium.practice.base.BaseTest;
 import com.selenium.practice.utils.WaitUtils;
 
@@ -18,7 +11,7 @@ public class AddorRemoveElementTest extends BaseTest {
     @Test
     public void AddRemoveElementTest() {
         // Test methods for adding or removing elements will go here
-        driver.navigate().to("https://the-internet.herokuapp.com");
+        driver.navigate().to("https://the-internet.herokuapp.com/");
 
         By label = By.cssSelector("a[href='/add_remove_elements/']");
 
