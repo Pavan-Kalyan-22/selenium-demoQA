@@ -24,7 +24,7 @@ public class BaseTest {
     @BeforeClass
     public void setUp() {
         // Set up the ChromeDriver automatically.
-        WebDriverManager.chromedriver().setup();
+    WebDriverManager.chromedriver().browserVersion("155").setup();
 
         // Configure Chrome to start in a maximized and incognito window.
         ChromeOptions options = new ChromeOptions();
