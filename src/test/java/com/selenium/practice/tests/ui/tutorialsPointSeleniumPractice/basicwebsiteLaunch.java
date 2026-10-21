@@ -26,6 +26,21 @@ public class basicwebsiteLaunch extends BaseTest {
         String getSource = driver.getPageSource();
         // System.out.println(getSource);
 
+        driver.navigate().back();
+
+        String newUrl = driver.getCurrentUrl();
+        System.out.println(newUrl);
+
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        driver.navigate().refresh();
+
+        driver.navigate().forward();
+
     }
 
 }
