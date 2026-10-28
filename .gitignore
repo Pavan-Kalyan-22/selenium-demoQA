@@ -23,3 +23,4 @@ Thumbs.db
 *~
 # environment properties
 *.env
+automation.log
