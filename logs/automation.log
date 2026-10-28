@@ -423,3 +423,5 @@ Session ID: 306185138ea5f0ed95e1a4a4300b0ceb
 2026-07-22 06:28:55 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - Skipped: 0
 2026-07-22 06:28:55 [main] INFO  com.selenium.practice.listeners.TestExecutionListener - ========================================
 
+2026-10-28 16:12:16 [main] INFO  com.selenium.practice.tests.ui.product.ProductDetailsTest - Selected Dashboard Product: Name = Sauce Labs Onesie, Price = 7.99
+2026-10-28 16:12:16 [main] INFO  com.selenium.practice.tests.ui.product.ProductDetailsTest - Details Page Product: Name = Sauce Labs Onesie, Price = 7.99

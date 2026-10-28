@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import com.selenium.practice.enums.SortType;
 import com.selenium.practice.models.Product;
+import com.selenium.practice.utils.WaitUtils;
 import com.selenium.practice.utils.commonUtils;
 
 // Page object representing the home page of the application.
@@ -50,7 +51,15 @@ public class HomePage {
     // Locator for the badge showing the number of items in the cart.
     private By shoppingCartBadge = By.cssSelector(".shopping_cart_badge");
 
-    // Collects all visible products from the home page and converts them into Product objects.
+    // Locator for the product name on the product details page.
+    private By detailsProductName = By.cssSelector(".inventory_details_name, [data-test='inventory-item-name']");
+    // Locator for the product price on the product details page.
+    private By detailsProductPrice = By.cssSelector(".inventory_details_price, [data-test='inventory-item-price']");
+    // Locator for the Back to Products button on the product details page.
+    private By backToProductsBtn = By.cssSelector("[data-test='back-to-products'], #back-to-products");
+
+    // Collects all visible products from the home page and converts them into
+    // Product objects.
     public List<Product> getAllProducts() {
 
         List<WebElement> products = driver.findElements(productContainer);
@@ -67,12 +76,12 @@ public class HomePage {
         }
         return productList;
     }
-    
+
     /**
      * Clicks the shopping cart icon/link to navigate to the cart/checkout page.
      */
-    public void navigateCheckoutPage(){
-       driver.findElement(shoppingCartLink).click();
+    public void navigateCheckoutPage() {
+        driver.findElement(shoppingCartLink).click();
     }
 
     /**
@@ -104,7 +113,7 @@ public class HomePage {
 
     }
 
-    public void removeProduct(){
+    public void removeProduct() {
         utils.click(driver.findElement(removeBtn));
 
     }
@@ -132,7 +141,31 @@ public class HomePage {
         return new Product(name, price);
     }
 
-    // Adds the requested number of products to the cart after shuffling the available items.
+    // Trigger one randomly product to the product details page and returns its
+    // details.
+    public Product selectRandomProductToDetailProduct() {
+
+        List<WebElement> products = driver.findElements(productContainer);
+
+        if (products.isEmpty()) {
+            throw new RuntimeException("No products found on the page");
+        }
+
+        int randomIndex = new java.util.Random().nextInt(products.size());
+
+        WebElement selectedProduct = products.get(randomIndex);
+
+        String name = selectedProduct.findElement(productName).getText();
+
+        String priceText = selectedProduct.findElement(productPrice).getText();
+        double price = Double.parseDouble(priceText.replace("$", ""));
+
+        selectedProduct.findElement(productName).click();
+        return new Product(name, price);
+    }
+
+    // Adds the requested number of products to the cart after shuffling the
+    // available items.
     public List<Product> addRandomProductsToCart(int number) {
 
         List<WebElement> products = driver.findElements(productContainer);
@@ -162,7 +195,8 @@ public class HomePage {
         return selectedProducts;
     }
 
-    // Returns the number shown on the shopping cart badge, or 0 if the cart is empty.
+    // Returns the number shown on the shopping cart badge, or 0 if the cart is
+    // empty.
     public int getCartBadgeCount() {
 
         if (driver.findElements(shoppingCartBadge).isEmpty()) {
@@ -172,6 +206,46 @@ public class HomePage {
         String badgeCount = driver.findElement(shoppingCartBadge).getText();
         return Integer.parseInt(badgeCount);
 
+    }
+
+    // Returns the product name displayed on the product details page.
+    public String getProductDetailsName() {
+        WebElement nameElement = WaitUtils.waitForVisibility(driver, detailsProductName, 10);
+        return nameElement.getText().trim();
+    }
+
+    // Returns the product price displayed on the product details page.
+    public double getProductDetailsPrice() {
+        WebElement priceElement = WaitUtils.waitForVisibility(driver, detailsProductPrice, 10);
+        String priceText = priceElement.getText().trim();
+        return Double.parseDouble(priceText.replace("$", ""));
+    }
+
+    // Returns a Product object containing the name and price from the product details page.
+    public Product getProductDetails() {
+        return new Product(getProductDetailsName(), getProductDetailsPrice());
+    }
+
+    // Clicks the Back to Products button to return to the product listing/dashboard.
+    public void clickBackToProducts() {
+        WaitUtils.waitForClickable(driver, backToProductsBtn, 10).click();
+    }
+
+    // Convenience aliases
+    public String getDetailsPageProductName() {
+        return getProductDetailsName();
+    }
+
+    public double getDetailsPageProductPrice() {
+        return getProductDetailsPrice();
+    }
+
+    public String getDetailsProductName() {
+        return getProductDetailsName();
+    }
+
+    public double getDetailsProductPrice() {
+        return getProductDetailsPrice();
     }
 
 }
