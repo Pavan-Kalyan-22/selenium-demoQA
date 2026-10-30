@@ -28,19 +28,14 @@ public class HomePage {
 
     // Locator for each product card on the home page.
     private final By productContainer = By.className("inventory_item");
-    // Locator for the list of products shown in the cart/checkout page.
-    private final By cartList = By.className("cart_list");
+    
     // Locator for the product name within a product card.
     private By productName = By.cssSelector("[data-test='inventory-item-name']");
     // Locator for the product price within a product card.
     private By productPrice = By.cssSelector("[data-test='inventory-item-price']");
     // Locator for the sorting dropdown on the home page.
     private By sortContainer = By.cssSelector("[data-test='product-sort-container']");
-    // Locator for the product name in the checkout/cart page.
-    private By checkoutAssetItemName = By.cssSelector("[data-test='inventory-item-name']");
-    // Locator for the product price in the checkout/cart page.
-    private By checkOutproductPrice = By.cssSelector("[data-test='inventory-item-price']");
-
+    
     // Locator for the Add to Cart button on a product card.
     private By cartBtn = By.cssSelector(".btn_inventory");
 
@@ -84,26 +79,7 @@ public class HomePage {
         driver.findElement(shoppingCartLink).click();
     }
 
-    /**
-     * Retrieves a list of products currently displayed on the checkout/cart page.
-     * This uses dedicated locators in case the cart page structure differs from the
-     * home page, though in this application they happen to be identical.
-     *
-     * @return list of {@link Product} objects representing items in the cart
-     */
-    public List<Product> getAllCheckoutProducts() {
-        List<WebElement> products = driver.findElements(cartList);
-        List<Product> checkoutProductList = new ArrayList<>();
-
-        for (WebElement product : products) {
-            String name = product.findElement(checkoutAssetItemName).getText();
-            String priceText = product.findElement(checkOutproductPrice).getText();
-            double price = Double.parseDouble(priceText.replace("$", ""));
-            checkoutProductList.add(new Product(name, price));
-        }
-
-        return checkoutProductList;
-    }
+    
 
     // Selects the requested sorting option from the dropdown on the home page.
     public void selectSortOption(SortType sortType) {

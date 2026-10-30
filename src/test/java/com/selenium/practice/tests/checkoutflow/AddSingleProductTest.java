@@ -7,43 +7,45 @@ import org.testng.annotations.Test;
 
 import com.selenium.practice.base.AuthenticatedBaseTest;
 import com.selenium.practice.models.Product;
+import com.selenium.practice.pages.CartPage;
 import com.selenium.practice.pages.HomePage;
 
 public class AddSingleProductTest extends AuthenticatedBaseTest {
 
-    @Test
-    public void verifyRandomProductAddedToCart() {
+        @Test
+        public void verifyRandomProductAddedToCart() {
 
-        // Arrange
-        HomePage homePage = new HomePage(driver);
+                // Arrange
+                HomePage homePage = new HomePage(driver);
+                CartPage cartpage = new CartPage(driver);
 
-        // Act
-        Product selectedProduct = homePage.addRandomProductToCart();
+                // Act
+                Product selectedProduct = homePage.addRandomProductToCart();
 
-        // Assert
-        int cartCount = homePage.getCartBadgeCount();
-logger.info(cartCount);
+                // Assert
+                int cartCount = homePage.getCartBadgeCount();
+                logger.info(cartCount);
 
-        Assert.assertEquals(cartCount, 1,
-                "Cart count did not increase after adding product");
+                Assert.assertEquals(cartCount, 1,
+                                "Cart count did not increase after adding product");
 
-        logger.info("Selected Product: "
-                + selectedProduct.getName()
-                + " | Price: "
-                + selectedProduct.getPrice());
+                logger.info("Selected Product: "
+                                + selectedProduct.getName()
+                                + " | Price: "
+                                + selectedProduct.getPrice());
 
-        // navigate and verify the same product appears in the cart
-        homePage.navigateCheckoutPage();
-        List<Product> checkoutProducts = homePage.getAllCheckoutProducts();
+                // navigate and verify the same product appears in the cart
+                homePage.navigateCheckoutPage();
+                List<Product> checkoutProducts = cartpage.getAllCheckoutProducts();
 
-        Assert.assertEquals(checkoutProducts.size(), 1,
-                "Expected exactly one product in the checkout page");
-        Product productInCart = checkoutProducts.get(0);
+                Assert.assertEquals(checkoutProducts.size(), 1,
+                                "Expected exactly one product in the checkout page");
+                Product productInCart = checkoutProducts.get(0);
 
-        // compare using equals (name + price) to ensure exact match
-        Assert.assertEquals(productInCart, selectedProduct,
-                "Product details in cart do not match the selected product");
+                // compare using equals (name + price) to ensure exact match
+                Assert.assertEquals(productInCart, selectedProduct,
+                                "Product details in cart do not match the selected product");
 
                 logger.info("Cart List : " + productInCart);
-    }
+        }
 }

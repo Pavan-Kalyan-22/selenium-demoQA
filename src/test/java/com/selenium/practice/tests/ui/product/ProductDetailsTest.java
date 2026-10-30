@@ -14,31 +14,27 @@ public class ProductDetailsTest extends AuthenticatedBaseTest {
 
         HomePage homePage = new HomePage(driver);
 
-        // Select a random product from dashboard and navigate to the details page
+        // Select a random product and navigate to details page
         Product dashboardProduct = homePage.selectRandomProductToDetailProduct();
 
-        logger.info("Selected Dashboard Product: Name = " + dashboardProduct.getName()
-                + ", Price = " + dashboardProduct.getPrice());
+        logger.info("Selected Dashboard Product: Name = "
+                + dashboardProduct.getName() + ", Price = "
+                + dashboardProduct.getPrice());
 
-        // Retrieve product name and price from the product details page
-        String detailsPageName = homePage.getDetailsPageProductName();
-        double detailsPagePrice = homePage.getDetailsPageProductPrice();
-
-        logger.info("Details Page Product: Name = " + detailsPageName
-                + ", Price = " + detailsPagePrice);
-
-        // Compare the Product name from dashboard and in details page
-        Assert.assertEquals(detailsPageName, dashboardProduct.getName(),
-                "Product name on details page does not match dashboard product name");
-
-        // Compare the Product price from dashboard and in details page
-        Assert.assertEquals(detailsPagePrice, dashboardProduct.getPrice(),
-                "Product price on details page does not match dashboard product price");
-
-        // Verify the Product model matches completely (name and price)
+        // Retrieve product details
         Product detailsProduct = homePage.getProductDetails();
-        Assert.assertEquals(detailsProduct, dashboardProduct,
-                "Product details object (name and price) does not match the dashboard product");
-    }
 
+        logger.info("Details Page Product: Name = "
+                + detailsProduct.getName() + ", Price = "
+                + detailsProduct.getPrice());
+
+        // Verify product details
+        Assert.assertEquals(detailsProduct.getName(),
+                dashboardProduct.getName(),
+                "Product name does not match");
+
+        Assert.assertEquals(detailsProduct.getPrice(),
+                dashboardProduct.getPrice(),
+                "Product price does not match");
+    }
 }
