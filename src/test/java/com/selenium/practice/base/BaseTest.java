@@ -5,18 +5,20 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import com.selenium.practice.utils.ConfigReader;
+import com.selenium.practice.utils.ScreenShotUtils;
 
 // Base class for shared test setup and cleanup.
 public class BaseTest {
 
     // WebDriver instance used by the test methods in this class.
     protected WebDriver driver;
-
     // Logger for recording test setup and execution details.
     protected Logger logger = LogManager.getLogger(this.getClass());
 
@@ -24,7 +26,7 @@ public class BaseTest {
     @BeforeClass
     public void setUp() {
         // Set up the ChromeDriver automatically.
-    WebDriverManager.chromedriver().browserVersion("155").setup();
+        WebDriverManager.chromedriver().browserVersion("155").setup();
 
         // Configure Chrome to start in a maximized and incognito window.
         ChromeOptions options = new ChromeOptions();
@@ -42,10 +44,19 @@ public class BaseTest {
     }
 
     // Closes the browser session after the test class finishes.
-    @AfterClass(alwaysRun = true)
-    public void tearDown() {
+    @AfterMethod
+    public void tearDown(ITestResult result) {
+
+        if (result.getStatus() == ITestResult.FAILURE) {
+
+            System.out.println("Test failed. Capturing screenshot...");
+
+            ScreenShotUtils.captureScreenshot(
+                    driver, result.getName());
+        }
+
         if (driver != null) {
-            driver.close();
+            driver.quit();
         }
     }
 }
