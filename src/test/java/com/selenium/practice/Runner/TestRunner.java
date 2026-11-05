@@ -16,7 +16,8 @@ import io.cucumber.testng.FeatureWrapper;
     },
     plugin = {
         "pretty",
-        "html:target/cucumber-reports/cucumber.html"
+        "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
+
     },
     monochrome = true
 )
@@ -34,6 +35,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
         groups = "cucumber",
         description = "Runs Cucumber Scenarios",
         dataProvider = "scenarios"
+
     )
     public void runScenario(
             PickleWrapper pickleWrapper,

@@ -1,26 +1,44 @@
-# Maven
+# Maven build output
+target/
 /target/
 /**/*.class
-# Eclipse
+
+# Allure generated reports and results
+allure-results/
+allure-report/
+.allure-history-temp/
+
+# Test execution logs
+logs/
+*.log
+automation.log
+
+# TestNG generated reports
+test-output/
+/test-output/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# IDE generated files
+.vscode/.browse.VC.db
+.vscode/ipch/
 .project
 .classpath
 .settings/
-# IntelliJ
 *.iml
 *.ipr
 *.iws
 .idea/
-# OS
+
+# OS generated files
 .DS_Store
 Thumbs.db
-# Logs
-*.log
+
 # WebDriver binaries
 /drivers/
-# Test output
-/test-output/
-# Temporary files
-*~
-# environment properties
+
+# Environment properties
 *.env
-automation.log
