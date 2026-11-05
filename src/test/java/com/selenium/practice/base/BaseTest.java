@@ -25,15 +25,12 @@ public class BaseTest {
     // Sets up the browser and opens the application URL before the test class runs.
     @BeforeClass
     public void setUp() {
-        // Set up the ChromeDriver automatically.
-        WebDriverManager.chromedriver().browserVersion("155").setup();
-
         // Configure Chrome to start in a maximized and incognito window.
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
         options.addArguments("--incognito");
+        // Set up the ChromeDriver automatically.
 
-        // Create the ChromeDriver with the configured options.
         driver = new ChromeDriver(options);
 
         // Read the application URL from configuration properties.
@@ -58,5 +55,16 @@ public class BaseTest {
         if (driver != null) {
             driver.quit();
         }
+    }
+
+    public void closeBrowser() {
+        if (driver != null) {
+            driver.quit();
+            driver = null;
+        }
+    }
+
+    public WebDriver getDriver() {
+        return driver;
     }
 }
