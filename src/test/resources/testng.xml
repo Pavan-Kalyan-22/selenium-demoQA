@@ -10,14 +10,12 @@
   
   <test name="ProductSelect">
     <packages>
-      <package name="com.selenium.practice.tests.checkoutflow"/>
-    </packages>
-  </test>
-  <test name="SingleProductSelect">
-    <packages>
-      <package name="com.selenium.practice.tests.checkoutflow"/>
-    </packages>
-  </test>
-</suite>
-
-
+        <package name="com.selenium.practice.tests.checkoutflow"/>
+      </packages>
+    </test>
+    <test name="SingleProductSelect">
+      <packages>
+        <package name="com.selenium.practice.tests.ui.product"/>
+      </packages>
+    </test>
+  </suite>
